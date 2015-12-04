@@ -1,11 +1,23 @@
-*** Build the docker image
-sudo docker build -t xtide .
+====================
+Dockerfile for xtide
+===================
 
-*** Get tide info
-sudo docker run xtide /xtide/xtide-2.14/tide -l "seattle"
+Build the docker image
+======================
 
-*** Print hourly time series to file
-sudo docker run xtide /xtide/xtide-2.14/tide -l "seattle" -m r -s "01:00" > out.csv
+docker build -t xtide .
 
-*** Plot contents of out.csv
+Get tide info
+=============
+
+docker run xtide /xtide/xtide-2.14/tide -l "seattle"
+
+Print hourly time series to file
+================================
+
+docker run xtide /xtide/xtide-2.14/tide -l "seattle" -m r -s "01:00" > out.csv
+
+Plot contents of out.csv
+========================
+
 python plot.py
