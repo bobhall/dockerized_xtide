@@ -8,7 +8,6 @@ ADD ./harmonics-dwf-20141224/harmonics-dwf-20141224-free.tcd /usr/local/share/xt
 
 RUN chmod 755 /usr/local/share/xtide
 RUN chmod 644 /usr/local/share/xtide/harmonics-dwf-20141224-free.tcd
-RUN chmod 644 /usr/local/share/xtide/harmonics-dwf-20100522-free.tcd
 
 RUN apt-get update
 
